@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<style>
+form{
+	background-color: pink;
+
+}
+
+*{
+	margin: 5px;
+}
+</style>
+</head>
+<body>
+<h1>A Simple Reg Form </h1>
+<div>
+	<form action = "https://www.torilo.com/student-db.php" method="POST" target="_blank" autocomplete="on">
+		<fieldset>
+		<legend>Personal Information</legend>
+		<label for="fusername" >Username</label>
+		<input type ="text" id="fusername" name="username" minlength="5" maxlength="20"><br><br>
+
+		<label for="fPassword">Password</label>
+		<input type = "Password" id="fPassword" name ="Password"><br><br>
+		</fieldset>
+
+
+
+		<label>Tell us about yourself</label><br>
+		<textarea name="details" cols="25" rows="5">
+			What is on your mind?
+		</textarea><br>
+
+		<p>What is your favourite language</p><br>
+		<label for ="lang">English</label>
+		<input id="lang" type="radio" name="language" value="English">
+
+		<label for ="lang">French</label>
+		<input id="lang" type="radio" name="language" value="French">
+
+		<label for ="lang">Spanish</label>
+		<input id="lang" type="radio" name="language" value="Spanish">
+
+		<label for ="lang">German</label>
+		<input id="lang" type="radio" name="language" value="German">
+
+		<label for ="lang">Yoruba</label>
+		<input id="lang" type="radio" name="language" value="Yoruba"><br><br>
+
+
+		<input type="submit" value="submit details">
+	
+
+	<label for ="gp">Academic perfomance</label>
+	<select id ="gp" name = "gp">
+		<option value = "first">5.0 - 4.50</option>
+		<option value = "2.1">4.49 - 3.50</option>
+		<option value = "2.2">3.49 - 2.50</option>
+		<option value = "3rd">2.49 - 1.50</option>
+		<option value = "pass">1.00 - 1.49</option>
+	</select>
+
+	<p>Upload a copy of your resume</p>
+	<input type="file" name="cv"><br>
+
+
+	<input type="image" src="submit.jpeg" width="150" height="60" value="submit">		
+
+
+</form>
+
+</body>
+</html>
